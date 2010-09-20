@@ -1,6 +1,7 @@
 class HomeController < ApplicationController
+  before_filter :save_uri
+  
   def index
-    I18n.locale = :ru
   end
 
 end
