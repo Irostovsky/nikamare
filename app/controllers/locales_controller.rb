@@ -7,4 +7,8 @@ class LocalesController < ApplicationController
     redirect_to uri
   end
 
+  private
+  
+  def save_uri
+  end
 end
