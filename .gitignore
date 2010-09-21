@@ -1,6 +1,5 @@
 *.swp
 log/*
-log/log.test
 public/assets
 *.vim
 .DS_Store

@@ -2,7 +2,8 @@ class LocalesController < ApplicationController
   
   def update
     uri = session[:uri] || ''
-    I18n.default_locale = params[:id].to_sym
+    locale = params[:id]
+    cookies['locale'] = { :value => locale, :expires => 1.year.from_now }
     redirect_to uri
   end
 
